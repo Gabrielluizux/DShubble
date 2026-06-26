@@ -1,0 +1,17 @@
+@import "@fontsource-variable/roboto";
+@import "@fontsource-variable/roboto-mono";
+@import "@/assets/app.css";
+@source "../../hubble-ds/registry/**/*.{ts,tsx}";
+
+:root {
+  --font-sans: "Roboto Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Roboto Mono Variable", ui-monospace, monospace;
+}
+
+html,
+body,
+#storybook-root {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100%;
+}
