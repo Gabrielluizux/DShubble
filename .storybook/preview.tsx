@@ -29,7 +29,7 @@ const preview: Preview = {
     },
     options: {
       storySort: (a, b) => {
-        const groupOrder = ["Foundations", "Components"];
+        const groupOrder = ["Foundations", "Components", "Guides"];
         const groupA = a.title.split("/")[0];
         const groupB = b.title.split("/")[0];
         if (groupA !== groupB) {

@@ -143,7 +143,7 @@ const groups: { title: string; tokens: ColorToken[] }[] = [
 ];
 
 const meta = {
-  title: "Foundations/Colors",
+  title: "Foundations/Colors/Semantic Tokens",
   tags: ["autodocs"],
   parameters: { layout: "padded" },
 } satisfies Meta;

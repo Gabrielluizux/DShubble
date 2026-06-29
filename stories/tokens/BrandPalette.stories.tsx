@@ -40,7 +40,7 @@ function PaletteRow({ name, hint }: { name: string; hint: string }) {
 }
 
 const meta = {
-  title: "Foundations/Tailwind Colors",
+  title: "Foundations/Colors/Brand Palette",
   tags: ["autodocs"],
   parameters: { layout: "padded" },
 } satisfies Meta;
@@ -51,6 +51,11 @@ type Story = StoryObj<typeof meta>;
 export const PaletteScales: Story = {
   render: () => (
     <div>
+      <p style={{ fontSize: 13, color: "var(--color-muted-text)", marginBottom: 24, maxWidth: 640 }}>
+        hubble-ds&apos;s own raw numbered scales — these back the semantic tokens (e.g. <code>primary</code> points
+        at a step of <code>primaria</code>). For the actual Tailwind CSS default palette, see{" "}
+        <strong>Tailwind Palette</strong>.
+      </p>
       {families.map((f) => (
         <PaletteRow key={f.name} {...f} />
       ))}
